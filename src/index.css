@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Montserrat", sans-serif;
+  --font-heading: "Playfair Display", serif;
+  
+  --color-cream: #FDFBF7;
+  --color-cream-dark: #F5EFEB;
+  --color-blush: #FAF0EE;
+  --color-pink-accent: #FAF0EE;
+  --color-pink-accent-dark: #E2B2AA;
+  --color-chocolate: #2C1A14;
+  --color-chocolate-light: #5A3E36;
+  --color-gold: #C5A059;
+  --color-gold-light: #F4E8D1;
+}
+
+/* Custom layout scrollbar and generic focus states */
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-color: #FDFBF7;
+}
+
+/* Smooth selection colors */
+::selection {
+  background-color: #E2B2AA;
+  color: #2C1A14;
+}
+
+/* Print Stylesheet for receipt invoicing */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #contact, #contact * {
+    visibility: visible;
+  }
+  #contact {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}

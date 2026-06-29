@@ -1,0 +1,6 @@
+{
+  "name": "Beejayz Premium Cake Bakery",
+  "description": "A luxurious and warm custom cake and dessert bakery website featuring interactive cake design, elegant collections, and inquiry management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
